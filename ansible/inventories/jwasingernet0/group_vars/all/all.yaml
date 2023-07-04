@@ -7,7 +7,7 @@
 
 server_fqdn: "{{ inventory_hostname }}.srv.{{ ethereum_network_name }}.ethpandaops.io"
 
-ethereum_network_name: jwasingernet
+ethereum_network_name: jwasingernet0
 ethereum_network_id: >-
   {{ (lookup('file', eth_testnet_config_local_dir_src + '/genesis.json') | from_json).config.chainId }}
 ethereum_network_deposit_contract: >-
